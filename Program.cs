@@ -45,8 +45,9 @@ double LineLength(double x1, double y1, double x2, double y2)
     double line1Length, line2Length, result;
     line1Length = x2 - x1;
     line2Length = y2 - y1;
-    result = Math.Sqrt(Math.Pow(line1Length,2) + Math.Pow(line2Length,2));
+    result = Math.Sqrt(Math.Pow(line1Length, 2) + Math.Pow(line2Length, 2));
     return result;
+    // return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
 }
 
 Console.Write("Введите координату Х первой точки: ");
@@ -58,4 +59,4 @@ double x2 = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите координату Y второй точки: ");
 double y2 = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine("Длина отрезка: " + Math.Round(LineLength(x1, y1, x2, y2) , 2));
+Console.WriteLine("Длина отрезка: " + Math.Round(LineLength(x1, y1, x2, y2), 2));
